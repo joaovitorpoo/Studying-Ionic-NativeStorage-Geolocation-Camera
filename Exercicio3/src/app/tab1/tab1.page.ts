@@ -25,7 +25,6 @@ export class Tab1Page {
        console.log('Error getting location', error);
      });
     this.pessoas = this.pessoasService.encontrarPessoasProximas(latitudeUser,longitudeUser);
-    console.log(this.pessoas);
   }
 }
 
