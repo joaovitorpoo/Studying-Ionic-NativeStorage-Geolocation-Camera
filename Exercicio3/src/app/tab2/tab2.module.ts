@@ -7,6 +7,7 @@ import { Tab2Page } from './tab2.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { Tab2PageRoutingModule } from './tab2-routing.module';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { Tab2PageRoutingModule } from './tab2-routing.module';
     Tab2PageRoutingModule
   ],
   declarations: [Tab2Page],
-  providers: [NativeStorage]
+  providers: [NativeStorage, Geolocation]
 })
 export class Tab2PageModule {}
